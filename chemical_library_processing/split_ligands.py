@@ -4,7 +4,7 @@ import shutil
 from math import ceil
 
 # === USER INPUT ===
-source_folder = "/home/projects/scratch/diyaolua/screening_test/test_1_ligands_pdbqt"   # change this
+source_folder = "/home/projects/scratch/diyaolua/directory/test_1_ligands_pdbqt"   # change this
 num_folders = 4                                 # number of groups to split into
 base_output = os.path.join(source_folder, "test_split_1")  # optional parent folder
 
@@ -43,3 +43,4 @@ for i in range(num_folders):
     print(f"Group {i+1}: moved {len(group_files)} files")
 
 print("Done. Files distributed equally into 6 folders.")
+
